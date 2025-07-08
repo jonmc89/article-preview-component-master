@@ -108,4 +108,9 @@ main {
   width: 3em;
   height: 3em;
   border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.share-icon-container:hover {
+  background-color: var(--colour1);
 }
