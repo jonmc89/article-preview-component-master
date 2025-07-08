@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*** Style Guide ***/
+
+:root {
+  --colour1: hsl(217, 19%, 35%);
+  --colour2: hsl(214, 17%, 51%);
+  --colour3: hsl(212, 23%, 69%);
+  --colour4: hsl(210, 46%, 95%);
+}
+
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif, serif;
+}
