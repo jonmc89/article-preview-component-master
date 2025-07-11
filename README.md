@@ -31,7 +31,7 @@ Users should be able to:
 
 - Solution Active
 
-![](./images/Solution%20Active%20State.png
+![](./images/Solution%20Active%20State.png)
 
 ### Links
 
