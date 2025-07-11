@@ -190,6 +190,9 @@ main {
     grid-template-columns: 1fr 2fr;
     justify-items: center;
   }
+  .card-text-container {
+    padding-bottom: 5em;
+  }
 
   .card-img {
     grid-column: 1;
@@ -205,5 +208,18 @@ main {
     width: 90%;
     grid-row: 1;
     margin-top: 2em;
+  }
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 90em) {
+  .card {
+    width: 60%;
+  }
+
+  .non-mob-share-container {
+    top: 31em;
+    right: 16.5em;
   }
 }

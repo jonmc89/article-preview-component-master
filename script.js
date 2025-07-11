@@ -1,5 +1,3 @@
-/* Variables */
-
 const shareIcon = document.getElementById("shareIcon");
 const cardProfileContainer = document.getElementById("cardProfileContainer");
 const originalContent = document.getElementById("cardProfileInfo");
