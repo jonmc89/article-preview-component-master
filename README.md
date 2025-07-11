@@ -27,11 +27,11 @@ Users should be able to:
 
 - Solution
 
-  ![](./images/Solution.png)
+![](./images/Solution.png)
 
 - Solution Active
 
-  ![](./images/Solution%20Active%20State.png)
+![](./images/Solution%20Active%20State.png
 
 ### Links
 
