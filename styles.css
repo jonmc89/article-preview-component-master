@@ -135,10 +135,12 @@ main {
 .profile-info-active {
   display: none;
   align-items: center;
-  height: 4em;
+  justify-content: space-between;
+  padding: 1em;
 }
 
-.profile-info-active p {
+.profile-info-active p,
+.share-active-icons-non-mob p {
   font-size: 1.4em;
   letter-spacing: 0.4em;
   color: var(--colour2);
@@ -150,14 +152,43 @@ main {
   gap: 1.8em;
 }
 
+.non-mob-share-container {
+  position: absolute;
+  display: none;
+  top: 46em;
+  right: 0.1em;
+}
+
+.share-active-icons-non-mob {
+  width: 22em;
+  border-radius: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8em 1.8em;
+  background-color: var(--colour1);
+  z-index: 99;
+}
+
+.arrow {
+  position: absolute;
+  top: 5em;
+  right: 10em;
+  width: 1em;
+  height: 1em;
+  background-color: var(--colour1);
+  transform: rotate(45deg);
+}
+
 /* Tablet View */
 
 @media screen and (min-width: 48em) {
   .card {
-    width: 70%;
-    height: 30%;
+    width: 80%;
+    height: 28em;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-items: center;
   }
 
   .card-img {
@@ -171,12 +202,8 @@ main {
   .card-text-container {
     grid-column: 2;
     height: 20em;
-    width: 100%;
+    width: 90%;
     grid-row: 1;
-  }
-
-  .card-profile-container {
-    grid-column: 2;
-    grid-row: 2;
+    margin-top: 2em;
   }
 }
