@@ -36,7 +36,6 @@ main {
   width: 90%;
   background-color: var(--colour4);
   border-radius: 0.8em;
-  overflow-x: hidden;
   box-shadow: 1em 1em 2em var(--boxShadow);
 }
 
@@ -155,8 +154,9 @@ main {
 .non-mob-share-container {
   position: absolute;
   display: none;
-  top: 46em;
-  right: 0.1em;
+  top: 15em;
+  right: -6.4em;
+  z-index: 99;
 }
 
 .share-active-icons-non-mob {
@@ -219,7 +219,7 @@ main {
   }
 
   .non-mob-share-container {
-    top: 31em;
-    right: 16.5em;
+    top: 11em;
+    right: -5.6em;
   }
 }
