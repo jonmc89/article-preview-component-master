@@ -122,6 +122,7 @@ main {
 }
 
 .share-btn-container {
+  position: relative;
   padding: 1em;
   display: none;
   height: auto;
