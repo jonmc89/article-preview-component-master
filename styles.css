@@ -128,3 +128,39 @@ button {
   justify-content: center;
   width: 2rem;
 }
+
+/* || Media Query */
+
+@media screen and (min-width: 48rem) {
+  .card {
+    display: grid;
+    height: 21.625rem;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    width: 38rem;
+  }
+
+  .image-container {
+    background-size: cover;
+    height: 100%;
+  }
+
+  .text-container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .card {
+    height: 17.5rem;
+    width: 45.625rem;
+  }
+
+  .text-container {
+    padding: 2rem;
+  }
+
+  .text-medium {
+    margin-block-end: 1.5rem;
+  }
+}
