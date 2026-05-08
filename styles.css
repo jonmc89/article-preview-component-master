@@ -7,10 +7,10 @@
 }
 
 :root {
-  --Grey-200: #48556a;
-  --Grey-400: #9daec2;
-  --Grey-500: #6e8098;
-  --Grey-900: #48556a;
+  --grey-200: #ecf2f8;
+  --grey-400: #9daec2;
+  --grey-500: #6e8098;
+  --grey-900: #48556a;
   --white: #fff;
   --text-preset-1-fw: 700;
   --text-preset-1-fs: 20px;
@@ -30,5 +30,101 @@
 }
 
 body {
+  align-items: center;
+  background-color: var(--grey-200);
+  display: flex;
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* || Main Styles */
+
+/* Typography */
+
+.text-bold {
+  color: var(--grey-900);
+  font-size: var(--text-preset-1-fs);
+  font-weight: var(--text-preset-1-fw);
+  line-height: var(--text-preset-1-lh);
+  letter-spacing: var(--text-preset-1-ls);
+  margin-block-end: 1.5rem;
+}
+
+.text-medium {
+  color: var(--grey-500);
+  font-size: var(--text-preset-2-med-fs);
+  line-height: var(--text-preset-2-med-lh);
+  letter-spacing: var(--text-preset-2-med-ls);
+  margin-block-end: 3rem;
+}
+
+.name {
+  color: var(--grey-900);
+  font-size: var(--text-preset-2-bold-fs);
+  font-weight: var(--text-preset-2-bold-fw);
+  line-height: var(--text-preset-2-bold-lh);
+  letter-spacing: var(--text-preset-2-bold-ls);
+}
+
+.date {
+  color: var(--grey-400);
+  font-size: var(--text-preset-2-bold-fs);
+  font-weight: var(--text-preset-2-bold-fw);
+  line-height: var(--text-preset-2-bold-lh);
+  letter-spacing: var(--text-preset-2-bold-ls);
+}
+
+/* Layout */
+
+.card {
+  background-color: var(--white);
+  border-radius: 0.625rem;
+  box-shadow: 1rem 1rem 3rem var(--grey-400);
+  height: 33.625rem;
+  overflow: hidden;
+  width: 20.4375rem;
+}
+
+.image-container {
+  background-image: url(./images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12.5rem;
+  margin-block-end: 2rem;
+  width: 100%;
+}
+
+.text-container {
+  padding: 0 2rem 1rem 2rem;
+}
+
+.profile-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: auto;
+  width: 2.5rem;
+}
+
+button {
+  align-items: center;
+  background-color: var(--grey-200);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
 }
