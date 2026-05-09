@@ -26,7 +26,7 @@
   --text-preset-3-fw: 400;
   --text-preset-3-fs: 0.8125rem;
   --text-preset-3-lh: 140%;
-  --text-preset-3-ls: 25%;
+  --text-preset-3-ls: 0.25rem;
 }
 
 body {
@@ -36,6 +36,7 @@ body {
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
   height: 100vh;
   justify-content: center;
+  position: relative;
 }
 
 /* || Main Styles */
@@ -83,6 +84,7 @@ body {
   box-shadow: 1rem 1rem 3rem var(--grey-400);
   height: 33.625rem;
   overflow: hidden;
+  position: relative;
   width: 20.4375rem;
 }
 
@@ -103,6 +105,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .profile-wrapper {
@@ -127,9 +130,99 @@ button {
   height: 2rem;
   justify-content: center;
   width: 2rem;
+  z-index: 99;
+}
+
+/* Share windows */
+
+.share-container {
+  align-items: center;
+  background-color: var(--grey-900);
+  bottom: 0;
+  display: flex;
+  opacity: 0;
+  gap: 1rem;
+  height: 4.4375rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.share-text {
+  color: var(--grey-400);
+  font-size: var(--text-preset-3-fs);
+  font-weight: var(--text-preset-3-fw);
+  line-height: var(--text-preset-3-lh);
+  letter-spacing: 0.25rem;
+}
+
+.social-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.social-link {
+  cursor: pointer;
+  transition: transform 0.2s e;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.share-container-visible {
+  opacity: 1;
+}
+
+.btn-selected {
+  background-color: var(--grey-500);
+}
+
+.share-icon-selected {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(98%) saturate(9%)
+    hue-rotate(201deg) brightness(103%) contrast(100%);
+}
+
+.share-container-desktop {
+  align-items: center;
+  background-color: var(--grey-900);
+  position: absolute;
+  border-radius: 0.625rem;
+  bottom: 5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  opacity: 0;
+  gap: 1rem;
+  left: 67.5%;
+  top: 53%;
+  transition: opacity 0.2s ease-in-out;
+  height: 3.2rem;
+  width: 14rem;
+}
+
+.share-container-desktop-visible {
+  opacity: 1;
+}
+
+.triangle {
+  position: absolute;
+  background-color: var(--grey-900);
+  height: 1rem;
+  bottom: -15%;
+  left: 50%;
+  transform: rotate(45deg);
+  width: 1rem;
 }
 
 /* || Media Query */
+
+@media screen and (max-width: 767px) {
+  .share-container-desktop {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 48rem) {
   .card {
@@ -148,6 +241,11 @@ button {
   .text-container {
     padding: 2rem;
   }
+
+  .share-container,
+  .share-container.share-container-visible {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 90rem) {
@@ -162,5 +260,10 @@ button {
 
   .text-medium {
     margin-block-end: 1.5rem;
+  }
+
+  .share-container-desktop {
+    left: 63.5%;
+    top: 50%;
   }
 }

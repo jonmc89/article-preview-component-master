@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Article preview component</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main>
@@ -45,11 +46,66 @@
                   <p class="date">28 Jun 2020</p>
                 </div>
               </div>
-              <button><img src="./images/icon-share.svg" alt="" /></button>
+              <button id="shareBtn">
+                <img id="shareIcon" src="./images/icon-share.svg" alt="" />
+              </button>
             </div>
           </div>
         </div>
+        <div id="shareContainer" class="share-container">
+          <p class="share-text">SHARE</p>
+          <div class="social-wrapper">
+            <a
+              class="social-link"
+              href="https://facebook.com"
+              rel="noopener noreferrer "
+            >
+              <img src="./images/icon-facebook.svg" alt="facebook logo"
+            /></a>
+            <a
+              class="social-link"
+              href="https://twitter.com"
+              rel="noopener noreferrer "
+            >
+              <img src="./images/icon-twitter.svg" alt="twitter logo"
+            /></a>
+            <a
+              class="social-link"
+              href="https://pinterest.com"
+              rel="noopener noreferrer "
+            >
+              <img src="./images/icon-pinterest.svg" alt="pinterest logo"
+            /></a>
+          </div>
+        </div>
       </article>
+      <div id="shareContainerDesktop" class="share-container-desktop">
+        <p class="share-text">SHARE</p>
+        <div class="social-wrapper">
+          <a
+            class="social-link"
+            href="https://facebook.com"
+            rel="noopener noreferrer "
+          >
+            <img src="./images/icon-facebook.svg" alt="facebook logo"
+          /></a>
+          <a
+            class="social-link"
+            href="https://twitter.com"
+            rel="noopener noreferrer "
+          >
+            <img src="./images/icon-twitter.svg" alt="twitter logo"
+          /></a>
+          <a
+            class="social-link"
+            href="https://pinterest.com"
+            rel="noopener noreferrer "
+          >
+            <img src="./images/icon-pinterest.svg" alt="pinterest logo"
+          /></a>
+        </div>
+        <div class="triangle"></div>
+      </div>
     </main>
   </body>
 </html>
